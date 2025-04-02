@@ -1,0 +1,43 @@
+### For automatic cookie support, make sure 
+### "rest-client.enableCookieStorage": true
+### in VS Code settings.json
+
+
+@baseUrl = http://127.0.0.1:3030/
+
+### Car Endpoints
+
+post {{baseUrl}}api/car
+Content-Type: application/json
+
+{
+    "vendor": "Subali",
+    "speed": 200
+}
+
+
+### Auth Endpoints
+### Login
+
+post {{baseUrl}}api/auth/login
+Content-Type: application/json
+
+{
+    "username": "cc",
+    "password": "cc"
+}
+
+### Logout
+
+post {{baseUrl}}api/auth/logout
+Content-Type: application/json
+
+### Test
+
+get {{baseUrl}}puki
+Content-Type: application/json
+
+### Test
+
+get {{baseUrl}}echo-cookies
+Content-Type: application/json
